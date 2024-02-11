@@ -1,0 +1,46 @@
+# Setting up tailwindcss for static webpage development:
+
+    1.  Create "index.html" for the HTML source file.
+
+    2.  Create this folder structre for css.
+        <project-folder>
+            |
+            |___src
+            |   |
+            |   |__input.css
+            |
+            |___css
+            |   |
+            |   |__style.css
+            |
+            |___index.html
+
+    3. Open a terminal instance and initialize node package manager using "npm init -y".
+
+    4. Install  tailwindcss utility in the node package manager using "sudo npm install tailwindcss postcss autoprefixer".
+
+    5. Initialize tailwindcss utility using "npx tailwindcss init -p".
+
+    6. Change the contents of tailwind.config.js with:
+
+        /** @type {import('tailwindcss').Config} */
+            module.exports = {
+            content: ["./*.html"],
+            theme: {
+                extend: {},
+            },
+            plugins: [],
+            }
+    7. Add this in input.css in the file this will add the tailwindcss utility classes to the CSS files :
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+    8. Start processing the input and utility classes of the tailwindcss using command "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+        -i is for the path of input.css file
+        -o is for the path of output.css file
+
+        # style.css file is the css file which will be linked to the HTML page.
+    
+    9. You are done with the tailwindcss setup now link the style.css file to index.html file using linkrel tag.
+    

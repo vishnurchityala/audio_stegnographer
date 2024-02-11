@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Stegnographer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./src/img/programming.png">
+</head>
+<body>
+    <section class="hero-section">
+        <div class="">
+            <nav class="hero-section-navbar">
+                <ul class="hero-section-nav">
+                    <li><a class="hero-section-navlink" href="">Home</a></li>
+                    <li><a class="hero-section-navlink" href="#toolSection">Tool</a></li>
+                    <li><a class="hero-section-navlink" href="#docs-section">Docs</a></li>
+                    <li><a class="hero-section-navlink" href="#aboutSection">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-text-container">
+            <h1 class="hero-heading">Audio</h1>
+            <h1 class="hero-heading">Stegnography</h1>
+            <p class="hero-subtext">Seconds away from secure communication. Try our free audio steganography tool now. Seconds away from secure communication. Try our free audio steganography tool now.</p>
+            <button class="hero-button"> Encrypt → </button>
+        </div>
+    </section>
+    <!-- This section is for tool page of the webpage -->
+    <section class="tool-section" id="toolSection">
+        <div class="text-center">
+            <img src="./src/img/programming.png" class="w-14 mx-auto mb-3" alt="">
+            <p class="font-semibold text-4xl">Encryptor / Decryptor</p>
+        </div>    
+        <div  class="grid grid-cols-1 md:grid-cols-2 gap-0 px-5 md:px-32 pt-12">
+            <div class="p-2">
+                <form>
+                    <fieldset class="bg-gray-50 border border-2 border-black rounded-md pt-2 pb-5 px-6">
+                        <legend><p class="text-2xl px-3 font-semibold">Encryptor</p></legend>
+                        <p class="text-lg font-medium mt-3">Audio File</p>
+                        <input type="file" name="" id="" class="block mt-3 bg-slate-100 border border-1 border-gray-400 px-3 py-5 rounded-lg cursor-pointer hover:bg-slate-300 w-full">
+                        <p class=" block text-lg font-medium mt-3">Text File</p>
+                        <input type="file" name="" id="" class="block mt-3 bg-slate-100 border border-1 border-gray-400 px-3 py-5 rounded-lg cursor-pointer hover:bg-slate-300 w-full">
+                        <div class="grid md:grid-cols-2">
+                            <div>
+                                <label for="encryption-password" class="block text-lg font-medium mt-3">Password</label>
+                                <input type="password" name="encryption-password" id="encryption-password" class="block mt-3 bg-slate-100 border border-black rounded-md py-2 pl-2 text-gray-900 placeholder:text-gray-800 w-full md:w-auto" placeholder="Password">
+                            </div>
+                            <div>
+                                <label for="encryption-email-id" class="block text-lg font-medium mt-3">Email-ID</label>
+                                <input type="email" name="encryption-email-id" id="encryption-email-id" class="block mt-3 bg-slate-100 border border-black rounded-md py-2 pl-2 text-gray-900 placeholder:text-gray-800 w-full md:auto" placeholder="Email-ID">
+                            </div>
+                        </div>
+                        <button type="submit" class="bg-black text-white rounded-xl px-4 py-2 font-medium mt-5 mb-3">Encrypt</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class=" p-2">
+                <form>
+                    <fieldset class="bg-gray-50 border border-2 border-black rounded-md pt-2 py-5 px-6">
+                        <legend><p class="text-2xl px-3 font-semibold">Decryptor</p></legend>
+                        <form>
+                            <p class="text-lg font-medium mt-3">Audio File</p>
+                            <input type="file" name="" id="" class="block mt-3 bg-slate-100 border border-1 border-gray-400 px-3 py-5 rounded-lg cursor-pointer hover:bg-slate-300 w-full">
+                            <p class=" block text-lg font-medium mt-3">Text File</p>
+                            <input type="file" name="" id="" class="block mt-3 bg-slate-100 border border-1 border-gray-400 px-3 py-5 rounded-lg cursor-pointer hover:bg-slate-300 w-full">
+                            <div class="grid md:grid-cols-2">
+                                <div>
+                                    <label for="decryption-password" class="block text-lg font-medium mt-3">Password</label>
+                                    <input type="password" name="decryption-password" id="decryption-password" class="block mt-3 bg-slate-100 border border-black rounded-md py-2 pl-2 text-gray-900 placeholder:text-gray-800 w-full md:w-auto" placeholder="Password">                                    
+                                </div>
+                                <div>
+                                    <label for="decryption-email-id" class="block text-lg font-medium mt-3">Email-ID</label>
+                                    <input type="email" name="decryption-email-id" id="decryption-email-id" class="block mt-3 bg-slate-100 border border-black rounded-md py-2 pl-2 text-gray-900 placeholder:text-gray-800 w-full md:auto" placeholder="Email-ID">
+                                </div>
+                            </div>
+                            <button type="submit" class="bg-black text-white rounded-xl px-4 py-2 font-medium mt-5 mb-3">Decrypt</button>
+                        </form>
+                    </fieldset>
+                </form>
+            </div>
+        </div> 
+    </section>
+    <!-- This section is for about section of the webpage -->
+    <section class="about-section" id="aboutSection">
+        <div class="text-center">
+            <img src="./src/img/about.png" class="w-14 mx-auto mb-3" alt="">
+            <p class="font-semibold text-4xl">Creators</p>
+        </div>  
+        <div class="flex justify-center items-center pt-6">
+            <div class="md:flex md:items-center md:justify-center md:w-3/4">
+                <div class="creator-card text-center">
+                    <div class="creator-image">
+                    <img src="./src//img/profile.png" class="" alt="creator image">
+                    </div>
+                    <div class="creator-info">
+                        <h3 class="creator-name">Vishnu Chityala</h3>
+                        <p class="text-sm px-4 mt-4 w-1/2 mx-auto">
+                            BTECH-CSE 1st Year student at Bennett University
+                        </p>
+                        <div class="mt-4 mb-6 mx-auto my-auto text-xs inline-flex items-center font-bold leading-sm uppercase px-2 py-1 max-w-fit bg-gray-300 text-black rounded-full">
+                            <p class="creator-role">Frontend developer</p>
+                        </div>
+                    </div>
+
+                    <div class="creator-contact">
+                        <a href=""><img src="./src/img/instagram.png" class="w-8" alt=""></a>
+                        <a href=""><img src="./src/img/linkedin.png" class="w-8" alt=""></a>
+                        <a href=""><img src="./src/img/gmail.png" class="w-8" alt=""></a>
+                    </div>
+                </div>  
+                <div class="creator-card text-center">
+                    <div class="creator-image">
+                    <img src="./src/img/profile2.png" class="" alt="creator image">
+                    </div>
+                    <div class="creator-info">
+                        <h3 class="creator-name">Naga Chaitanya</h3>
+                        <p class="text-sm mt-4 px-4 w-1/2 mx-auto">
+                            BTECH-CSE 2nd Year student at Bennett University
+                        </p>
+                        <div class="mt-4 mb-6 mx-auto my-auto text-xs inline-flex items-center font-bold leading-sm uppercase px-2 py-1 max-w-fit bg-gray-300 text-black rounded-full">
+                            <p class="">backend developer</p>
+                        </div>
+                    </div>
+                    <div class="creator-contact">
+                        <a href=""><img src="./src/img/instagram.png" class="w-8" alt=""></a>
+                        <a href=""><img src="./src/img/linkedin.png" class="w-8" alt=""></a>
+                        <a href=""><img src="./src/img/gmail.png" class="w-8" alt=""></a>
+                    </div>
+                </div>
+            </div>     
+        </div>   
+    </section>
+    <!-- This section is for Documentation page of the webpage -->
+    <section class="docs-section" id="docs-section">
+        <div class="text-center">
+            <img src="./src/img/docs.png" class="w-14 mx-auto mb-3" alt="">
+            <p class="font-semibold text-4xl">Docs</p>
+        </div>  
+        <div class="w-full md:w-2/3 mx-auto text-center font-medium text-2xl mt-12 px-6">
+            <p>Audio steganography is a technique for hiding secret messages within audio files. This can be
+            useful for securely transmitting sensitive information or for embedding copyright information
+            within audio content. AES-256 is a strong encryption algorithm that can be used to protect the
+            hidden message from unauthorized access. AES-256 uses a 256-bit key to encrypt and decrypt
+            data. This makes it very difficult for attackers to break the encryption and recover the hidden
+            message.</p>
+        </div>
+        <div class="mt-8 flex justify-center items-center"><a class="border border-2 border-black font-medium px-6 py-2 rounded-xl cursor-pointer" href="https://drive.google.com/file/d/1KYki2oKaMuImAVRD5Fi1-5X7PTGwr904/view">More</a></div>
+    </section>
+
+</body>
+</html>

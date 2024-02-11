@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section
+{
+    min-height: 660px;
+    text-align: center;
+    display: grid;
+    background-image: linear-gradient(to right  top, rgb(49, 234, 255), #dcfdff, #ffffff ,#f9e2ff,#ce53ff);
+}
+
+.hero-section-navbar
+{
+    @apply    
+        pt-5
+        flex
+        items-center
+        fixed
+        w-full
+    ;
+}
+.hero-section-nav
+{
+    @apply
+        max-w-fit
+        flex
+        items-center
+        gap-10
+        mx-auto
+        px-10
+        py-6
+        rounded-full
+        backdrop-blur-md
+        bg-white/50
+        shadow-xl
+    ;
+}
+
+.hero-section-navlink
+{
+    @apply font-semibold text-sm;
+    transition: font-size 0.3s ease-out;
+    transform-origin: center;
+    font-size: 0.9rem;
+}
+.hero-section-navlink:hover
+{
+    font-size: 1.2rem;
+}
+.hero-text-container 
+{
+    margin-bottom: 5rem;
+    @apply px-60;
+}
+  
+.hero-heading 
+{
+    @apply font-bold text-6xl;
+}
+  
+.hero-subtext 
+{
+    @apply font-medium text-xl mt-5;
+}
+
+.hero-button
+{
+    @apply bg-black text-white rounded-full px-4 py-2 font-semibold mt-10;
+}
+
+.about-section
+{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #f6ffff;
+}
+.docs-section
+{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #ffffff;
+    min-height:400px; 
+}
+.tool-section
+{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #ffffff;
+}
+.creator-card {
+    @apply shadow-2xl rounded-lg m-3 bg-white pt-10 md:w-80 mt-6;
+}
+
+.creator-image 
+{
+    @apply w-36 mx-auto overflow-hidden;
+}
+
+.creator-name 
+{
+    @apply text-2xl font-semibold mt-6;
+}
+
+.creator-contact {
+    @apply bg-slate-100 rounded-lg flex items-center justify-center gap-12 py-8;
+}
+
+
+@media (max-width : 700px) {
+    .hero-section-navbar
+    {
+        @apply hidden;
+    }
+    .hero-section-nav
+    {
+        @apply
+            gap-8
+            px-10
+        ;
+    }
+    .hero-text-container 
+    {
+        margin-bottom: 5rem;
+        @apply px-0;
+    }
+    .hero-heading
+    {
+        @apply text-5xl;
+    }
+    .hero-section
+    {
+        min-height: fit-content;
+        @apply
+            py-10
+            px-6
+        ;
+    }
+}
+
+
